@@ -14,6 +14,13 @@
 
         public string? Filiaçao { get; set; }
 
+        public int? Idade { get; set; }
 
+        public double? peso { get; set; }
+
+
+        public string? plus { get; set; }
+        public string? premiumplus { get; set; }
+        public string? premiupremiumplus { get; set; }
     }
 }
