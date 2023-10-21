@@ -1,10 +1,10 @@
-<h3>Cadastro de Alunos</h3>
-<p>Preencha os campos para incluir um aluno</p>
+<h3>Cadastro de Funcionários</h3>
+<p>Preencha os campos para incluir um funcionário</p>
 <hr>
-<form [formGroup]="alunoForm" (ngSubmit)="onSubmit()">
+<form>
     <div class="row mb-2">
       <div class="col-md-4">
-        <label>Nome do Aluno:</label>
+        <label>Nome do Funcionário:</label>
         <input type="text" class="form-control" placeholder="Digite o nome aqui." formControlName="nome">
       </div>
 
@@ -38,22 +38,13 @@
       <div class="row mb-2">
         <div class="col-md-12">
           <input type="submit" class="btn btn-success" value="Realizar Cadastro">
-          <a [routerLink]="['/pages/consulta-alunos']" class="btn btn-secondary ms-2">Ir para a consulta</a>
+          <a class="btn btn-secondary ms-2">Ir para a consulta</a>
         </div>
       </div>
 
 
     </div>
 </form>
-<div *ngIf="dadosDoAluno">
-  <h3>Dados Do Aluno Cadastrado</h3>
-  <p><strong>Nome:</strong> {{ dadosDoAluno.nome }} </p>
-  <p><strong>Idade:</strong>{{dadosDoAluno.idade}} </p>
-  <p><strong>CPF:</strong> {{dadosDoAluno.cpf}} </p>
-  <p><strong>E-mail:</strong> {{ dadosDoAluno.email}} </p>
-  <p><strong>Observações:</strong> {{dadosDoAluno.observacoes}} </p>
-</div>
-
 
 
 
